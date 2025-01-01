@@ -33,6 +33,7 @@ errorShots/
 .ipynb_checkpoints
 
 # Distribution / packaging
+.venv
 .Python
 env/
 venv/
