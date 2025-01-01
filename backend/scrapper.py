@@ -51,8 +51,8 @@ def scrape_trending():
    
     driver = init_driver(proxy)
 
-    twitter_username = "parker_jon43869"
-    twitter_password = "#Bond007"
+    twitter_username = process.env.username
+    twitter_password = process.env.password
 
     driver.get("https://x.com/i/flow/login")
 
