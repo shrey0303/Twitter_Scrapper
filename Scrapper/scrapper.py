@@ -20,8 +20,8 @@ db = client["twitter_trends"]
 collection = db["trending_topics"]
 
 # ProxyMesh configuration
-PROXYMESH_USERNAME = "jonty_007"
-PROXYMESH_PASSWORD = "X.85PzyETBtiTf%40"
+PROXYMESH_USERNAME = process.env.proxymesh_username
+PROXYMESH_PASSWORD = process.env.proxymesh_password
 PROXYMESH_ENDPOINTS = [
     "us-wa.proxymesh.com:31280",
     "us-ny.proxymesh.com:31280",
@@ -53,8 +53,8 @@ def scrape_trending():
    
     driver = init_driver(proxy)
 
-    twitter_username = "parker_jon43869"
-    twitter_password = "#Bond007"
+    twitter_username = process.env.twitter_username
+    twitter_password = process.env.twitter_username
 
     driver.get("https://x.com/i/flow/login")
 
